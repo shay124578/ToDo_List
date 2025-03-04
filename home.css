@@ -95,5 +95,29 @@ body {
 
   #title {
     font-size: 45px;
-    color: #041e13;
+    color: rgba(15, 88, 119, 0.832);
+    text-shadow: 0 0 50px rgba(61, 112, 112, 0.479);
+    margin-bottom: 120px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+  }
+  button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 200px;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    background-color: rgba(19, 43, 51, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(30, 55, 55, 0.927);
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    position: absolute;
+    
   }
