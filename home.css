@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #18485c; /* Default background color */
+  }
+  
+  .standard {
+      background-image: linear-gradient(100deg, #575656, #062e3f);
+      color: #ffdfdb;
+      transition: 0.3s linear;
+  }
+  
+  .blue {
+      background-image: linear-gradient(100deg, #1f386f, #07292f);
+      color: white;
+      transition: 0.3s linear;
+  }
+  
+  .green {
+      background-image: linear-gradient(100deg, #1b3f27, #9db8a2d7);
+      color: #a5bd90c6;
+      transition: 0.3s linear;
+  }
+  
+  .light {
+      background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+      color: #1a150e;
+      transition: 0.3s linear;
+  }
+  
+  .darker {
+      background-image: linear-gradient(100deg, #001214, #001f29);
+      color: white;
+      transition: 0.3s linear;
+  }
+  
+  #header {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 3rem;
+      min-height: 25vh;
+  }
+  
+  .flexrow-container {
+      position: absolute;
+      top: 100px;
+      right: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-right: 0;
+  }
+  
+  .theme-selector {
+      border: 1px solid #000000;
+      border-radius: 100%;
+      height: 35px;
+      margin: 0 8px;
+      transition: transform 150ms ease-in-out, box-shadow 200ms ease-in-out;
+      width: 35px;
+  }
+  
+  .theme-selector:hover { 
+      box-shadow: white 0 0 8px;
+      cursor: pointer;
+  }
+  
+  .theme-selector:active {
+      transform: scale(0.95);
+  }
+  
+  .standard-theme {
+      background-image: linear-gradient(100deg, #575656, #062e3f);
+  }
+  
+  .blue-theme {
+      background-image: linear-gradient(100deg, #0a3d43, #080536);
+  }
+  
+  .green-theme {
+      background-image: linear-gradient(100deg, #1b3f27, #50805bb7);
+  }
+  
+  .light-theme {
+      background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+  }
+  
+  .darker-theme {
+      background-image: linear-gradient(100deg, #001214, #001f29);
+  }
+
+  #title {
+    font-size: 45px;
+    color: #041e13;
+  }
