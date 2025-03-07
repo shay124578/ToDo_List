@@ -16,7 +16,7 @@ body {
 
 /* Body light or darker themes */
 .standard {
-    background-image: linear-gradient(100deg, #575656, #062e3f);
+    background-image: linear-gradient(100deg, #575656, #0d394c);
     color: #ffdfdb;
     transition: 0.3s linear;
 }
