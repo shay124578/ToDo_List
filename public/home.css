@@ -102,6 +102,7 @@ body {
     top: 50%;
     left: 50%;
   }
+
   button {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -120,4 +121,12 @@ body {
     border-bottom-right-radius: 17px;
     position: absolute;
     
+  }
+  #CWL {
+    font-size: 20px;
+    color: rgb(208, 160, 160) !important;
+    text-shadow: 25px 7px 15px rgba(9, 135, 135, 0.479);
+    margin-top: 50%;
+    margin-left: 80px;
+    left: 50%;
   }
