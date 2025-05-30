@@ -71,3 +71,11 @@ function changeTheme(theme) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('showSignUp') === '1') {
+        document.querySelector('.form-wrapper.sign-in').style.display = 'none';
+        document.querySelector('.form-wrapper.sign-up').style.display = 'block';
+    }
+});
+
