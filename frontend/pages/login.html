@@ -26,12 +26,12 @@
         <form action="/login" method="POST">
           <h2>Login</h2>
           <div class="input-group">
-            <input type="text" name="username" required>
-            <label for="">Username</label>
+            <input type="text" name="username" required placeholder=" ">
+            <label>Username</label>
           </div>
           <div class="input-group">
-            <input type="password" name="password" required>
-            <label for="">Password</label>
+            <input type="password" name="password" required placeholder=" ">
+            <label>Password</label>
           </div>
           <div class="remember">
             <label><input type="checkbox"> Remember me</label>
@@ -46,16 +46,16 @@
         <form action="/signup" method="POST">
           <h2>Sign Up</h2>
           <div class="input-group">
-            <input type="text" name="username" required>
-            <label for="">Username</label>
+            <input type="text" name="username" required placeholder=" ">
+            <label>Username</label>
           </div>
           <div class="input-group">
-            <input type="email" name="email" required>
-            <label for="">Email</label>
+            <input type="email" name="email" required placeholder=" ">
+            <label>Email</label>
           </div>
           <div class="input-group">
-            <input type="password" name="password" required>
-            <label for="">Password</label>
+            <input type="password" name="password" required placeholder=" ">
+            <label>Password</label>
           </div>
           <div class="remember">
             <label><input type="checkbox" name="terms"> I agree to the terms & conditions</label>
@@ -67,6 +67,9 @@
         </form>
       </div>
     </div>
+    <div id="login-error-popup" style="display:none;position:fixed;top:30px;left:50%;transform:translateX(-50%);background:#e74c3c;color:#fff;padding:16px 32px;border-radius:8px;z-index:999;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+  Wrong username or password!
+</div>
 <footer>
     <div class="footer-content">
       <p>To-Do List is a simple and effective way to manage your tasks and stay organized. Add tasks, mark them as complete, and delete them when done.</p>

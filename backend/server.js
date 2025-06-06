@@ -18,7 +18,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'frontend', 'pages', 'index.html'));
 });
-app.get('/home', (req, res) => {
+app.get('/ToDo', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'frontend', 'pages', 'ToDo.html'));
 });
 app.get('/login.html', (req, res) => {
@@ -49,8 +49,8 @@ app.get('/capture-info', (req, res) => {
 
     console.log('Captured User Info:', userInfo); // Log the info to the server console
 
-    // Redirect the client to the home page (ToDo.html)
-    res.redirect('/home');
+    // Redirect the client to the ToDo page (ToDo.html)
+    res.redirect('/ToDo');
 });
 
 app.post('/signup', (req, res) => {
@@ -67,7 +67,7 @@ app.post('/signup', (req, res) => {
             } else {
                 console.log(`User ${username} added with ID ${this.lastID}`);
                 // Redirect to ToDo.html after successful signup
-                res.redirect('/home');
+                res.redirect('/ToDo');
             }
         }
     );
@@ -84,12 +84,10 @@ app.post('/login', (req, res) => {
             }
             if (row) {
                 // Credentials are correct, redirect to ToDo.html
-                res.redirect('/home');
+                res.redirect('/ToDo');
             } else {
-                // Credentials are incorrect, redirect back to sign-up form
-                // Option 1: Redirect to login with a query param (recommended)
-                res.redirect('/login?showSignUp=1');
-                // Option 2: Render a message or handle via JS (see below)
+                // Credentials are incorrect, redirect back to login with error
+                res.redirect('/login.html?error=1');
             }
         }
     );

@@ -164,8 +164,8 @@ h2 {
   border: none;
   outline: none;
 }
-.input-group input:focus~label,
-.input-group input:valid~label {
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
   top: -5px;
 }
 .remember {

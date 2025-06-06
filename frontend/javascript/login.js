@@ -73,9 +73,25 @@ function changeTheme(theme) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('showSignUp') === '1') {
+
+    if (urlParams.get('error') === '1') {
+        document.querySelector('.wrapper').classList.remove('active');
+        document.querySelector('.form-wrapper.sign-in').style.display = 'block';
+        document.querySelector('.form-wrapper.sign-up').style.display = 'none';
+
+        const popup = document.getElementById('login-error-popup');
+        if (popup) {
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+        }
+    } else if (urlParams.get('showSignUp') === '1') {
         document.querySelector('.form-wrapper.sign-in').style.display = 'none';
         document.querySelector('.form-wrapper.sign-up').style.display = 'block';
+    } else {
+        document.querySelector('.form-wrapper.sign-in').style.display = 'block';
+        document.querySelector('.form-wrapper.sign-up').style.display = 'none';
     }
 });
 
